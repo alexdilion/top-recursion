@@ -8,3 +8,10 @@ function fibs(n) {
 
     return fibNums;
 }
+
+function fibsRec(n, arr = [0, 1]) {
+    if (arr.length >= n) return arr;
+
+    arr.push(arr.at(arr.length - 2) + arr.at(arr.length - 1));
+    return fibsRec(n, arr);
+}
