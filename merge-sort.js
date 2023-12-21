@@ -14,6 +14,7 @@ function mergeArrs(a, b) {
         }
     }
 
+    // push any numbers that were not checked to mergedArr
     if (i < a.length) {
         mergedArr.push(...a.slice(i));
     } else if (j < b.length) {
@@ -27,8 +28,13 @@ function mergeSort(arr) {
     if (arr.length === 0) return [];
     if (arr.length === 1) return arr;
 
+    // sort left half
     let leftArr = mergeSort(arr.slice(0, Math.floor(arr.length / 2)));
+
+    // sort right half
     let rightArr = mergeSort(arr.slice(Math.floor(arr.length / 2)));
+
+    // merge left and right arrays
     let mergedArr = mergeArrs(leftArr, rightArr);
 
     return mergedArr;
