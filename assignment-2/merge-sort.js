@@ -40,10 +40,10 @@ function mergeSort(arr) {
     return mergedArr;
 }
 
-console.log(mergeSort([]));
-console.log(mergeSort([1, 2, 3]));
-console.log(mergeSort([1, 2, 3, 4]));
-console.log(mergeSort([6, 5, 4, 3]));
-console.log(mergeSort([6, 6, 5, 4, 4, 3]));
-console.log(mergeSort([1, 1, 1, 1, 1, 1, 2]));
-console.log(mergeSort([2, 1, 1, 3, 2, 2, 3, 3, 1, 1]));
+console.log(mergeSort([])); // []
+console.log(mergeSort([1, 2, 3])); // [1, 2, 3]
+console.log(mergeSort([1, 2, 3, 4])); // [1, 2, 3, 4]
+console.log(mergeSort([6, 5, 4, 3])); // [3, 4, 5, 6]
+console.log(mergeSort([6, 6, 5, 4, 4, 3])); // [3, 4, 4, 5, 6, 6]
+console.log(mergeSort([1, 1, 1, 1, 1, 1, 2])); // [1, 1, 1, 1, 1, 1, 2]
+console.log(mergeSort([2, 1, 1, 3, 2, 2, 3, 3, 1, 1])); // [1, 1, 1, 1, 2, 2, 2, 3, 3, 3]
